@@ -1,162 +1,102 @@
-/* Contenedor principal del header */
-.header-container {
-    display: flex;
-    justify-content: space-between; /* Mantener el logo a la izquierda y la navegación a la derecha */
-    align-items: center;
-    margin: 0 40px; /* Añadir espacio desde los bordes izquierdo y derecho */
-  }
-  
-  /* Contenedor del logo */
-  .logo-container {
-    flex: 0 1 auto;
-  }
-  
-  .logo {
-    width: 150px; /* Ajusta el tamaño del logo */
+/* Estilos para el logo */
+.logo {
+    width: 200px;
     height: auto;
-  }
-  
-  /* Contenedor de la barra de navegación */
-  .nav-container {
-    display: flex;
-    gap: 20px; /* Espacio entre los botones de navegación */
-  }
-  
-  /* Botones de navegación */
-  .nav-button {
+}
+
+/* Ajustar la barra de navegación más hacia el centro */
+.navbar-nav {
+    margin-left: auto; /* Ajusta este valor para mover el menú hacia la izquierda */
+    margin-right: 10%;
+}
+
+/* Estilo de los botones del menú */
+.nav-link {
     background-color: #f3ebfe;
     color: #333;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 12px;
     font-weight: bold;
-    cursor: pointer;
-    position: relative;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
     transition: all 0.3s ease;
-  }
-  
-  /* Eliminar la flecha de abajo */
-  .nav-button::after {
-    content: none;
-  }
-  
-  /* Cambiar el fondo al pasar el mouse */
-  .nav-button:hover {
-    background-color: #d9c7f7;
-  }
-  
-  /* Estilo del menú desplegable */
-  .dropdown-content {
-    display: none; /* Oculto por defecto */
-    position: absolute;
-    top: 100%; /* Colocar el menú justo debajo del botón */
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    padding: 10px 0;
-    width: 100%; /* El menú tiene el mismo ancho que el botón */
-    z-index: 1;
-  }
-  
-  /* Enlaces dentro del menú desplegable */
-  .dropdown-content a {
-    color: #333;
-    padding: 15px 30px;
-    display: block;
-    text-decoration: none;
-    font-weight: normal;
-    text-align: left;
-    transition: background-color 0.3s ease;
-    font-size: 14px;
-  }
-  
-  /* Cambiar color de fondo de las opciones al pasar el mouse */
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Mostrar el menú cuando el mouse está sobre el botón */
-  .nav-button:hover .dropdown-content {
-    display: block;
-  }
+}
 
-  /* Contenedor del botón principal */
-.nav-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .nav-button {
-    background-color: #e8defc;
-    color: #333;
-    padding: 15px 30px;
-    border-radius: 12px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+.nav-link:hover {
+    background-color: #d9c7f7;
+}
+
+/* Dropdown menus */
+.dropdown-menu {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 10px 0;
-    z-index: 1;
-    width: 200px;
-  }
-  
-  .nav-button:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Estilo para cada elemento de la lista */
-  .dropdown-item {
+    min-width: 200px;
+}
+
+/* Submenús */
+.dropdown-submenu {
     position: relative;
-  }
-  
-  /* Submenú dentro de una opción */
-  .submenu {
-    display: none;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    border-radius: 12px;
+}
+
+/* Evitar subrayado en los enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Mostrar submenú cuando se pasa el mouse */
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
     position: absolute;
     top: 0;
-    left: 100%; /* Coloca el submenú al lado derecho del menú principal */
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    width: 200px;
-  }
-  
-  /* Mostrar el submenú al pasar el mouse sobre la opción del menú */
-  .dropdown-item:hover .submenu {
-    display: block;
-  }
-  
-  /* Estilos para los enlaces dentro del menú */
-  .dropdown-content a, .submenu a {
-    color: #333;
-    padding: 10px 20px;
-    display: block;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-size: 14px;
-  }
-  
-  /* Cambiar el color al pasar el mouse sobre una opción */
-  .dropdown-content a:hover, .submenu a:hover {
+    left: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    z-index: 1000;
+    min-width: 200px;
+}
+
+/* Estilo en hover para los submenús */
+.dropdown-menu a:hover {
     background-color: #f1f1f1;
-  }
-  
-a {
-  text-decoration: none; /* Asegúrate de que no aparezca subrayado al hacer hover */
+}
+
+/* Ajustes de espaciado en dispositivos móviles */
+@media (max-width: 992px) {
+    .nav-link {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+        left: 0;
+        top: 100%;
+        margin-left: 0;
+    }
+
+    .dropdown-submenu:hover .dropdown-menu {
+        top: 100%;
+        left: 0;
+    }
+}
+
+/* Estilo para mostrar submenús en móviles */
+.dropdown-submenu > a::after {
+    content: "\25BC";
+    float: right;
+    margin-left: 5px;
 }
