@@ -7,7 +7,7 @@
 /* Ajustar la barra de navegación más hacia el centro */
 .navbar-nav {
     margin-left: auto; /* Ajusta este valor para mover el menú hacia la izquierda */
-    margin-right: 10%;
+    margin-right: 12%;
 }
 
 /* Estilo de los botones del menú */
