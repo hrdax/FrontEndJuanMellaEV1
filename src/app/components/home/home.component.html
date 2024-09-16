@@ -1,1 +1,36 @@
-<p>home works!</p>
+<div class="image-container">
+    <img ngSrc="fotofondo.jpg" alt="fondo logo" class="responsive-image" width="350" height="350" priority />
+</div>
+  
+<div class="container my-5">
+    <h3 class="text-center">VÍNCULOS MUNICIPALES</h3>
+    <div class="row flex-nowrap overflow-auto">
+      <div class="col-4 col-md-2 mt-5" *ngFor="let image of images">
+        <div class="card">
+          <img [ngSrc]="image.src" [alt]="image.alt" width="300" height="300" class="card-img-top img-fluid" />
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h3 class="text-center">TRÁMITES EN LÍNEA</h3>
+    <div class="row justify-content-center flex-nowrap overflow-auto">
+      <div class="col-4 col-md-2 mt-5" *ngFor="let image of imagesTramites">
+        <div class="card">
+          <img [ngSrc]="image.src" [alt]="image.alt" width="300" height="300" class="card-img-top img-fluid" />
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h3 class="text-center">GOBIERNO DE CHILE</h3>
+    <div class="row flex-nowrap overflow-auto">
+      <div class="col-4 col-md-2 mt-5" *ngFor="let image of imagesGobierno">
+        <div class="card">
+          <img [ngSrc]="image.src" [alt]="image.alt" width="300" height="300" class="card-img-top img-fluid" />
+        </div>
+      </div>
+    </div>
+</div>
