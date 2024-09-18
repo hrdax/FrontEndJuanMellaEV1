@@ -5,7 +5,7 @@
 }
 
 .overlay-text {
-    border-radius: 15px; /* Borde redondeado */
+    border-radius: 5px; /* Borde redondeado */
     position: absolute;
     bottom: 0;
     width: 100%;
