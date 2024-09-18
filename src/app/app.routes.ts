@@ -4,6 +4,7 @@ import { ConsejoMunicipalComponent } from './components/consejo-municipal/consej
 import { SecretariaMunicipalComponent } from './components/secretaria-municipal/secretaria-municipal.component';
 import { AsesorJuridicoComponent } from './components/asesor-juridico/asesor-juridico.component';
 import { RelacionesPublicasComponent } from './components/relaciones-publicas/relaciones-publicas.component';
+import { UnidadAmbienteComponent } from './components/unidad-ambiente/unidad-ambiente.component';
 
 
 export const routes: Routes = [
@@ -18,6 +19,10 @@ export const routes: Routes = [
     {
         path: 'relacionesPublicas',
         component: RelacionesPublicasComponent,
+    },
+    {
+        path: 'unidadAmbiente',
+        component: UnidadAmbienteComponent,
     },
     {
         path: 'secretariaMunicipal',
