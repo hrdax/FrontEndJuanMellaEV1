@@ -1,0 +1,61 @@
+.text-justify {
+    text-align: justify;
+}
+
+a {
+    color: inherit; /* Mantener el color original del texto */
+    text-decoration: none; /* Eliminar el subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.container {
+    max-width: 650px; /* Ancho del contenido */
+    font-family: 'Arial', sans-serif;
+}
+
+h2, h4 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6; /* Mejorar la legibilidad del texto */
+}
+
+.contact-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-heading img {
+    margin-right: 5px; /* Menor separación entre el icono y el texto */
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex img {
+    margin-right: 0; /* Eliminar casi todo el espacio entre la imagen y el título */
+}
+
+.mr-0 {
+    margin-right: 0; /* Ajustar a cero el margen derecho */
+}
+
+.ml-0 {
+    margin-left: 0; /* Ajustar a cero el margen izquierdo */
+}
