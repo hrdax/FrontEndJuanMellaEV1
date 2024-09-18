@@ -5,6 +5,7 @@ import { SecretariaMunicipalComponent } from './components/secretaria-municipal/
 import { AsesorJuridicoComponent } from './components/asesor-juridico/asesor-juridico.component';
 import { RelacionesPublicasComponent } from './components/relaciones-publicas/relaciones-publicas.component';
 import { UnidadAmbienteComponent } from './components/unidad-ambiente/unidad-ambiente.component';
+import { DireccionTransitoComponent } from './components/direccion-transito/direccion-transito.component';
 
 
 export const routes: Routes = [
@@ -31,5 +32,9 @@ export const routes: Routes = [
     {
         path: 'asesorJuridico',
         component: AsesorJuridicoComponent,
+    },
+    {
+        path: 'direccionTransito',
+        component: DireccionTransitoComponent,
     },
 ];
