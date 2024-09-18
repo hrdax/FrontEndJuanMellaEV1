@@ -8,6 +8,7 @@ import { UnidadAmbienteComponent } from './components/unidad-ambiente/unidad-amb
 import { DireccionTransitoComponent } from './components/direccion-transito/direccion-transito.component';
 import { DireccionfinanzasComponent } from './components/direccionfinanzas/direccionfinanzas.component';
 import { SeguridadpublicaComponent } from './components/seguridadpublica/seguridadpublica.component';
+import { SecplacComponent } from './components/secplac/secplac.component';
 
 
 export const routes: Routes = [
@@ -46,5 +47,9 @@ export const routes: Routes = [
     {
         path: 'seguridadPublica',
         component: SeguridadpublicaComponent,
+    },
+    {
+        path: 'secplac',
+        component: SecplacComponent,
     },
 ];
