@@ -6,6 +6,7 @@ import { AsesorJuridicoComponent } from './components/asesor-juridico/asesor-jur
 import { RelacionesPublicasComponent } from './components/relaciones-publicas/relaciones-publicas.component';
 import { UnidadAmbienteComponent } from './components/unidad-ambiente/unidad-ambiente.component';
 import { DireccionTransitoComponent } from './components/direccion-transito/direccion-transito.component';
+import { DireccionfinanzasComponent } from './components/direccionfinanzas/direccionfinanzas.component';
 
 
 export const routes: Routes = [
@@ -36,5 +37,9 @@ export const routes: Routes = [
     {
         path: 'direccionTransito',
         component: DireccionTransitoComponent,
+    },
+    {
+        path: 'direccionFinanzas',
+        component: DireccionfinanzasComponent,
     },
 ];
