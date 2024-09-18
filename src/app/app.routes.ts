@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { ConsejoMunicipalComponent } from './components/consejo-municipal/consejo-municipal.component';
+import { SecretariaMunicipalComponent } from './components/secretaria-municipal/secretaria-municipal.component';
+import { AsesorJuridicoComponent } from './components/asesor-juridico/asesor-juridico.component';
 
 
 export const routes: Routes = [
@@ -11,5 +13,13 @@ export const routes: Routes = [
     {
         path: 'concejoMunicipal',
         component: ConsejoMunicipalComponent,
+    },
+    {
+        path: 'secretariaMunicipal',
+        component: SecretariaMunicipalComponent,
+    },
+    {
+        path: 'asesorJuridico',
+        component: AsesorJuridicoComponent,
     },
 ];
