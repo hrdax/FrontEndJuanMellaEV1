@@ -1,0 +1,20 @@
+.text-justify {
+    text-align: justify;
+}
+
+/* Estilo personalizado para la lista */
+.custom-list {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left; /* Alinea los elementos de la lista a la izquierda */
+}
+
+.custom-list li {
+    padding-left: 5px; /* Añade un pequeño espacio entre el punto y el texto */
+}
+
+/* Asegurarse que las listas anidadas también estén alineadas a la izquierda */
+.custom-list ul {
+    list-style-position: inside;
+    padding-left: 20px; /* Alineación para las listas anidadas */
+}

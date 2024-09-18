@@ -7,6 +7,7 @@ import { RelacionesPublicasComponent } from './components/relaciones-publicas/re
 import { UnidadAmbienteComponent } from './components/unidad-ambiente/unidad-ambiente.component';
 import { DireccionTransitoComponent } from './components/direccion-transito/direccion-transito.component';
 import { DireccionfinanzasComponent } from './components/direccionfinanzas/direccionfinanzas.component';
+import { SeguridadpublicaComponent } from './components/seguridadpublica/seguridadpublica.component';
 
 
 export const routes: Routes = [
@@ -41,5 +42,9 @@ export const routes: Routes = [
     {
         path: 'direccionFinanzas',
         component: DireccionfinanzasComponent,
+    },
+    {
+        path: 'seguridadPublica',
+        component: SeguridadpublicaComponent,
     },
 ];
