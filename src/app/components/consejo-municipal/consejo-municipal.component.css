@@ -1,0 +1,20 @@
+.card {
+    position: relative;
+    border-radius: 15px; /* Borde redondeado */
+
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #3a3a3a79; /* Fondo gris translúcido */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card-img-top {
+    border-radius: 15px; /* Borde redondeado */
+    object-fit: cover; /* Asegura que la imagen se ajuste al tamaño del contenedor */
+}
