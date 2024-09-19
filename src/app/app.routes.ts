@@ -17,6 +17,7 @@ import { JuzgadopolicialocalComponent } from './components/juzgadopolicialocal/j
 import { OficinaDeporteComponent } from './components/oficina-deporte/oficina-deporte.component';
 import { RegistroSocialComponent } from './components/registro-social/registro-social.component';
 import { ProgramafamiliarComponent } from './components/programafamiliar/programafamiliar.component';
+import { OmdelComponent } from './components/omdel/omdel.component';
 
 
 export const routes: Routes = [
@@ -91,5 +92,9 @@ export const routes: Routes = [
     {
         path: 'programaFamilia',
         component: ProgramafamiliarComponent,
+    },
+    {
+        path: 'omdel',
+        component: OmdelComponent,
     },
 ];
