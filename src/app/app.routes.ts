@@ -20,6 +20,7 @@ import { ProgramafamiliarComponent } from './components/programafamiliar/program
 import { OmdelComponent } from './components/omdel/omdel.component';
 import { OmilComponent } from './components/omil/omil.component';
 import { OrganizacionescomunitariasComponent } from './components/organizacionescomunitarias/organizacionescomunitarias.component';
+import { EGISComponent } from './components/egis/egis.component';
 
 
 export const routes: Routes = [
@@ -106,5 +107,9 @@ export const routes: Routes = [
     {
         path: 'organizacionesComunitarias',
         component: OrganizacionescomunitariasComponent,
+    },
+    {
+        path: 'EGIS',
+        component: EGISComponent,
     },
 ];
