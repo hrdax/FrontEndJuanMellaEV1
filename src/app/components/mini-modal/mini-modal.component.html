@@ -1,0 +1,21 @@
+<div class="modal" *ngIf="isVisible" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" style="margin-right: 30px;">Seleccione una opción</h5> <!-- Aumenta el margen derecho del título -->
+            <button type="button" class="close" (click)="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <!-- Botones más organizados y centrados -->
+          <div class="d-grid gap-3">
+            <button class="btn btn-success btn-lg btn-block hover-press" (click)="openLink('https://mejoresconductores.conaset.cl/#/LicenciaClaseB')">Clase B</button>
+            <button class="btn btn-success btn-lg btn-block hover-press" (click)="openLink('https://mejoresconductores.conaset.cl/#/LicenciaClaseC')">Clase C</button>
+            <button class="btn btn-success btn-lg btn-block hover-press" (click)="openLink('https://mejoresconductores.conaset.cl/#/LicenciaClaseCR')">Clase CR</button>
+            <button class="btn btn-success btn-lg btn-block hover-press" (click)="openLink('https://mejoresconductores.conaset.cl/#/LicenciaClaseD')">Clase D</button>
+            <button class="btn btn-success btn-lg btn-block hover-press" (click)="openLink('https://mejoresconductores.conaset.cl/#/LicenciaClaseE')">Clase E</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -24,6 +24,7 @@ import { EGISComponent } from './components/egis/egis.component';
 import { SubsidioAguaComponent } from './components/subsidio-agua/subsidio-agua.component';
 import { SubsidioFamiliarComponent } from './components/subsidio-familiar/subsidio-familiar.component';
 import { ProdesalComponent } from './components/prodesal/prodesal.component';
+import { LicenciasConducirComponent } from './components/licencias-conducir/licencias-conducir.component';
 
 
 export const routes: Routes = [
@@ -126,5 +127,9 @@ export const routes: Routes = [
     {
         path: 'prodesal',
         component: ProdesalComponent,
+    },
+    {
+        path: 'licenciasConducir',
+        component: LicenciasConducirComponent,
     },
 ];
