@@ -164,11 +164,12 @@
     <!-- Botones de acción -->
     <div class="row mt-3 justify-content-center">
         <div class="col-md-3 mb-4">
-            <button (click)="openModal()" class="btn btn-light-green btn-lg btn-block hover-press">Clase B, C, D, E</button>
-            <app-mini-modal></app-mini-modal>
+        <button (click)="openModalBCDE()" class="btn btn-light-green btn-lg btn-block hover-press">Clase B, C, D, E</button>
+        <app-mini-modal [isVisible]="isVisibleBCDE" (close)="closeModalBCDE()"></app-mini-modal>
         </div>
         <div class="col-md-3 mb-4">
-            <a href="#" class="btn btn-light-green btn-lg btn-block hover-press">CLASE A1, A2, A3, A4, A5</a>
+        <button (click)="openModalA()" class="btn btn-light-green btn-lg btn-block hover-press">CLASE A1, A2, A3, A4, A5</button>
+        <app-modal-clases-a [isVisible]="isVisibleA" (close)="closeModalA()"></app-modal-clases-a>
         </div>
     </div>
     <!-- Botones de acción -->

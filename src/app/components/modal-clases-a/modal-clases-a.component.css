@@ -1,0 +1,34 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-dialog {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .close {
+    cursor: pointer;
+  }
+  
+
+  .modal-header .close {
+    position: absolute;
+    right: 15px;  /* Aumenta la distancia del borde derecho */
+    top: 15px;    /* Aumenta la distancia del borde superior */
+    font-size: 1.5rem;  /* Tamaño de la X */
+    background: none;  /* Sin fondo */
+    border: none;  /* Sin bordes */
+    outline: none;  /* Sin borde al enfocarse */
+    cursor: pointer;  /* Cambia el cursor a mano */
+  }
+  
