@@ -28,6 +28,7 @@ import { LicenciasConducirComponent } from './components/licencias-conducir/lice
 import { ExamenpracticoComponent } from './components/examenpractico/examenpractico.component';
 import { PermisocirculacionComponent } from './components/permisocirculacion/permisocirculacion.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 
 export const routes: Routes = [
@@ -146,5 +147,9 @@ export const routes: Routes = [
     {
         path: 'sobreNosotros',
         component: NosotrosComponent,
+    },
+    {
+        path: 'contacto',
+        component: ContactoComponent,
     },
 ];

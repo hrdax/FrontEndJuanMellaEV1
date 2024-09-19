@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <!-- Sección de "Contacto" -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <!-- Información de contacto -->
+            <h2 class="mb-4">Contacto</h2>
+            <p class="text-justify">
+                Si tienes alguna duda, consulta o necesitas asistencia, no dudes en ponerte en contacto con la Municipalidad de Hualañé. Estamos aquí para ayudarte y brindarte la mejor atención.
+            </p>
+            <ul class="list-unstyled">
+                <li><strong>Dirección:</strong> Av. Libertad 90, Hualañé</li>
+                <li><strong>Teléfono:</strong> +56 752 600150</li>
+                <li><strong>Email:</strong> contacto&#64;hualane.cl</li>
+                <li><strong>Horario de Atención:</strong> Lunes a Viernes, 08:30 - 17:30</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <!-- Formulario de contacto -->
+            <h2 class="mb-4">Envíanos un Mensaje</h2>
+            <form [formGroup]="contactoForm" (ngSubmit)="handleSubmit()">
+                <div class="form-group mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" id="email" class="form-control" formControlName="email" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea id="mensaje" class="form-control" formControlName="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
