@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,14 +8,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './modal-clases-a.component.html',
   styleUrl: './modal-clases-a.component.css'
 })
-export class ModalClasesAComponent implements OnInit{
+export class ModalClasesAComponent {
   @Input() isVisible: boolean = false;
   @Output() close = new EventEmitter<void>();
   
-  ngOnInit(): void {
-    console.log("aca", this.isVisible);
-    
-  }
+
   closeModal() {
     this.close.emit();
   }
