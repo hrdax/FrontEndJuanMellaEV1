@@ -21,6 +21,7 @@ import { OmdelComponent } from './components/omdel/omdel.component';
 import { OmilComponent } from './components/omil/omil.component';
 import { OrganizacionescomunitariasComponent } from './components/organizacionescomunitarias/organizacionescomunitarias.component';
 import { EGISComponent } from './components/egis/egis.component';
+import { SubsidioAguaComponent } from './components/subsidio-agua/subsidio-agua.component';
 
 
 export const routes: Routes = [
@@ -111,5 +112,9 @@ export const routes: Routes = [
     {
         path: 'EGIS',
         component: EGISComponent,
+    },
+    {
+        path: 'subsidioAgua',
+        component: SubsidioAguaComponent,
     },
 ];
