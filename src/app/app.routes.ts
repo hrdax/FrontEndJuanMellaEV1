@@ -14,6 +14,7 @@ import { DireccionobraComponent } from './components/direccionobra/direccionobra
 import { DepartamentosaludComponent } from './components/departamentosalud/departamentosalud.component';
 import { DepartamentoeducacionComponent } from './components/departamentoeducacion/departamentoeducacion.component';
 import { JuzgadopolicialocalComponent } from './components/juzgadopolicialocal/juzgadopolicialocal.component';
+import { OficinaDeporteComponent } from './components/oficina-deporte/oficina-deporte.component';
 
 
 export const routes: Routes = [
@@ -76,5 +77,9 @@ export const routes: Routes = [
     {
         path: 'juzgadoPoliciaLocal',
         component: JuzgadopolicialocalComponent,
+    },
+    {
+        path: 'oficinaDeporte',
+        component: OficinaDeporteComponent,
     },
 ];
