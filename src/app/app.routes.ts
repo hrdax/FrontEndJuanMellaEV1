@@ -16,6 +16,7 @@ import { DepartamentoeducacionComponent } from './components/departamentoeducaci
 import { JuzgadopolicialocalComponent } from './components/juzgadopolicialocal/juzgadopolicialocal.component';
 import { OficinaDeporteComponent } from './components/oficina-deporte/oficina-deporte.component';
 import { RegistroSocialComponent } from './components/registro-social/registro-social.component';
+import { ProgramafamiliarComponent } from './components/programafamiliar/programafamiliar.component';
 
 
 export const routes: Routes = [
@@ -86,5 +87,9 @@ export const routes: Routes = [
     {
         path: 'registroSocial',
         component: RegistroSocialComponent,
+    },
+    {
+        path: 'programaFamilia',
+        component: ProgramafamiliarComponent,
     },
 ];
