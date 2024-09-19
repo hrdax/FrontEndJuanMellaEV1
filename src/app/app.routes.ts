@@ -18,6 +18,7 @@ import { OficinaDeporteComponent } from './components/oficina-deporte/oficina-de
 import { RegistroSocialComponent } from './components/registro-social/registro-social.component';
 import { ProgramafamiliarComponent } from './components/programafamiliar/programafamiliar.component';
 import { OmdelComponent } from './components/omdel/omdel.component';
+import { OmilComponent } from './components/omil/omil.component';
 
 
 export const routes: Routes = [
@@ -96,5 +97,9 @@ export const routes: Routes = [
     {
         path: 'omdel',
         component: OmdelComponent,
+    },
+    {
+        path: 'omil',
+        component: OmilComponent,
     },
 ];
