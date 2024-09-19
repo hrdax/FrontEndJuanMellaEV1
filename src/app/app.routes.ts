@@ -19,6 +19,7 @@ import { RegistroSocialComponent } from './components/registro-social/registro-s
 import { ProgramafamiliarComponent } from './components/programafamiliar/programafamiliar.component';
 import { OmdelComponent } from './components/omdel/omdel.component';
 import { OmilComponent } from './components/omil/omil.component';
+import { OrganizacionescomunitariasComponent } from './components/organizacionescomunitarias/organizacionescomunitarias.component';
 
 
 export const routes: Routes = [
@@ -101,5 +102,9 @@ export const routes: Routes = [
     {
         path: 'omil',
         component: OmilComponent,
+    },
+    {
+        path: 'organizacionesComunitarias',
+        component: OrganizacionescomunitariasComponent,
     },
 ];
