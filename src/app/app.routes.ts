@@ -13,6 +13,7 @@ import { DireccioninternoComponent } from './components/direccioninterno/direcci
 import { DireccionobraComponent } from './components/direccionobra/direccionobra.component';
 import { DepartamentosaludComponent } from './components/departamentosalud/departamentosalud.component';
 import { DepartamentoeducacionComponent } from './components/departamentoeducacion/departamentoeducacion.component';
+import { JuzgadopolicialocalComponent } from './components/juzgadopolicialocal/juzgadopolicialocal.component';
 
 
 export const routes: Routes = [
@@ -71,5 +72,9 @@ export const routes: Routes = [
     {
         path: 'departamentoEducacion',
         component: DepartamentoeducacionComponent,
+    },
+    {
+        path: 'juzgadoPoliciaLocal',
+        component: JuzgadopolicialocalComponent,
     },
 ];
