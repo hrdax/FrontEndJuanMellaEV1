@@ -12,6 +12,7 @@ import { SecplacComponent } from './components/secplac/secplac.component';
 import { DireccioninternoComponent } from './components/direccioninterno/direccioninterno.component';
 import { DireccionobraComponent } from './components/direccionobra/direccionobra.component';
 import { DepartamentosaludComponent } from './components/departamentosalud/departamentosalud.component';
+import { DepartamentoeducacionComponent } from './components/departamentoeducacion/departamentoeducacion.component';
 
 
 export const routes: Routes = [
@@ -66,5 +67,9 @@ export const routes: Routes = [
     {
         path: 'departamentoSalud',
         component: DepartamentosaludComponent,
+    },
+    {
+        path: 'departamentoEducacion',
+        component: DepartamentoeducacionComponent,
     },
 ];
