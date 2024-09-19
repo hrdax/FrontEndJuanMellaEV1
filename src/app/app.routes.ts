@@ -26,6 +26,7 @@ import { SubsidioFamiliarComponent } from './components/subsidio-familiar/subsid
 import { ProdesalComponent } from './components/prodesal/prodesal.component';
 import { LicenciasConducirComponent } from './components/licencias-conducir/licencias-conducir.component';
 import { ExamenpracticoComponent } from './components/examenpractico/examenpractico.component';
+import { PermisocirculacionComponent } from './components/permisocirculacion/permisocirculacion.component';
 
 
 export const routes: Routes = [
@@ -136,5 +137,9 @@ export const routes: Routes = [
     {
         path: 'examenPractico',
         component: ExamenpracticoComponent,
+    },
+    {
+        path: 'permisoCirculacion',
+        component: PermisocirculacionComponent,
     },
 ];
