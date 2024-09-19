@@ -27,6 +27,7 @@ import { ProdesalComponent } from './components/prodesal/prodesal.component';
 import { LicenciasConducirComponent } from './components/licencias-conducir/licencias-conducir.component';
 import { ExamenpracticoComponent } from './components/examenpractico/examenpractico.component';
 import { PermisocirculacionComponent } from './components/permisocirculacion/permisocirculacion.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
 
 
 export const routes: Routes = [
@@ -141,5 +142,9 @@ export const routes: Routes = [
     {
         path: 'permisoCirculacion',
         component: PermisocirculacionComponent,
+    },
+    {
+        path: 'sobreNosotros',
+        component: NosotrosComponent,
     },
 ];
