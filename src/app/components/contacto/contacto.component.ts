@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
+import {ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
@@ -10,9 +10,11 @@ import {ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
 })
 export class ContactoComponent {
   contactoForm = new FormGroup({
-    mensaje: new FormControl(''),
-    email: new FormControl(''),
+    mensaje: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email]),
   });
+
+
 
   handleSubmit() {
     console.log("Mensaje que se envia desde formulario", this.contactoForm.value.mensaje);

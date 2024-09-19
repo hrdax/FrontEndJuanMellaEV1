@@ -26,8 +26,13 @@
                     <label for="mensaje" class="form-label">Mensaje</label>
                     <textarea id="mensaje" class="form-control" formControlName="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                <button type="submit" class="btn btn-primary btn-block" [disabled]="!contactoForm.valid">Enviar</button>
+
             </form>
+            <br>
+            @if (!contactoForm.valid) {
+                <span class="text-danger mt-2" >Rellene el formulario para enviar un mensaje</span>
+            }
         </div>
     </div>
 </div>
