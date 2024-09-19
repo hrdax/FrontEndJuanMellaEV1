@@ -23,6 +23,7 @@ import { OrganizacionescomunitariasComponent } from './components/organizaciones
 import { EGISComponent } from './components/egis/egis.component';
 import { SubsidioAguaComponent } from './components/subsidio-agua/subsidio-agua.component';
 import { SubsidioFamiliarComponent } from './components/subsidio-familiar/subsidio-familiar.component';
+import { ProdesalComponent } from './components/prodesal/prodesal.component';
 
 
 export const routes: Routes = [
@@ -121,5 +122,9 @@ export const routes: Routes = [
     {
         path: 'subsidioFamiliar',
         component: SubsidioFamiliarComponent,
+    },
+    {
+        path: 'prodesal',
+        component: ProdesalComponent,
     },
 ];
