@@ -159,26 +159,27 @@
     
 
     <!-- Texto de introducción a los botones -->
-    <h5 class="mt-5">PARA MAYOR INFORMACION DE NUESTROS SERVICIOS</h5>
-
-    <!-- Botones de acción -->
-    <div class="row mt-3 justify-content-center">
-        <div class="col-md-3 mb-4">
-        <button (click)="openModalBCDE()" class="btn btn-light-green btn-lg btn-block hover-press">Clase B, C, D, E</button>
-        <app-mini-modal [isVisible]="isVisibleBCDE" (close)="closeModalBCDE()"></app-mini-modal>
+    <div class="container mt-5 text-center">
+        <h5 class="mb-4">PARA MAYOR INFORMACIÓN DE NUESTROS SERVICIOS</h5>
+        <!-- Botones de acción -->
+        <div class="row mt-3 justify-content-center">
+            <div class="col-md-3 mb-4 d-flex justify-content-center">
+                <button (click)="openModalBCDE()" class="btn btn-light-green uniform-btn">Clase B, C, D, E</button>
+                <app-mini-modal [isVisible]="isVisibleBCDE" (close)="closeModalBCDE()"></app-mini-modal>
+            </div>
+            <div class="col-md-3 mb-4 d-flex justify-content-center">
+                <button (click)="openModalA()" class="btn btn-light-green uniform-btn">CLASE A1, A2, A3, A4, A5</button>
+                <app-modal-clases-a [isVisible]="isVisibleA" (close)="closeModalA()"></app-modal-clases-a>
+            </div>
         </div>
-        <div class="col-md-3 mb-4">
-        <button (click)="openModalA()" class="btn btn-light-green btn-lg btn-block hover-press">CLASE A1, A2, A3, A4, A5</button>
-        <app-modal-clases-a [isVisible]="isVisibleA" (close)="closeModalA()"></app-modal-clases-a>
-        </div>
-    </div>
-    <!-- Botones de acción -->
-    <div class="row mt-3 justify-content-center">
-        <div class="col-md-3 mb-4">
-            <a href="examenPractico" class="btn btn-light-green btn-lg btn-block hover-press">EXAMEN PRÁCTICO RECORRIDO</a>
-        </div>
-        <div class="col-md-3 mb-4">
-            <a href="https://mejoresconductores.conaset.cl/#/licenciaClaseA1A2" class="btn btn-light-green btn-lg btn-block hover-press">CLASE A-1 Y A-2 LEY 18.290</a>
+        <!-- Botones de acción -->
+        <div class="row mt-3 justify-content-center">
+            <div class="col-md-3 mb-4 d-flex justify-content-center">
+                <a href="examenPractico" class="btn btn-light-green uniform-btn">EXAMEN PRÁCTICO RECORRIDO</a>
+            </div>
+            <div class="col-md-3 mb-4 d-flex justify-content-center">
+                <a href="https://mejoresconductores.conaset.cl/#/licenciaClaseA1A2" class="btn btn-light-green uniform-btn">CLASE A-1 Y A-2 LEY 18.290</a>
+            </div>
         </div>
     </div>
 </div>
