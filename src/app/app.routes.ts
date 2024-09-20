@@ -29,6 +29,7 @@ import { ExamenpracticoComponent } from './components/examenpractico/examenpract
 import { PermisocirculacionComponent } from './components/permisocirculacion/permisocirculacion.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { TransparenciaComponent } from './components/transparencia/transparencia.component';
 
 
 export const routes: Routes = [
@@ -151,5 +152,9 @@ export const routes: Routes = [
     {
         path: 'contacto',
         component: ContactoComponent,
+    },
+    {
+        path: 'transparencia',
+        component: TransparenciaComponent,
     },
 ];

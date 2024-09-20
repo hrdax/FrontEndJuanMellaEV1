@@ -1,0 +1,58 @@
+/* Contenedor y texto */
+h2 {
+    margin-bottom: 1.5rem;
+}
+  
+p {
+    margin-bottom: 2rem;
+}
+
+/* Imágenes: mantengo el width y height que estableciste */
+.chile-atiende-img,
+.mercado-publico-img,
+.ley19862-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Espaciado en móviles */
+@media (max-width: 768px) {
+    .row.align-items-center > div {
+        margin-bottom: 20px; /* Añadir espacio entre las columnas en móviles */
+    }
+}
+
+/* Alerta de actualización */
+.update-alert {
+    background-color: #EEF2FF;
+    color: #333;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Tarjetas (cards) */
+.custom-card {
+    background-color: #f9f9fc;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card .card-header {
+    background-color: #EEF2FF;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Botones */
+.custom-btn {
+    background-color: #e6f3e6;
+    border: 1px solid #b5e5b5;
+    color: #333;
+    padding: 8px 16px;
+    font-size: 1rem;
+}
+
+.custom-btn:hover {
+    background-color: #d4edd4;
+    border-color: #a9dba9;
+}
